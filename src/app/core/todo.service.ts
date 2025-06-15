@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class TodoService {
-  private baseUrl = 'http://localhost/projects/api/todo.php?request=';
+  private baseUrl = ' ?request=';
 
   constructor(private http: HttpClient) {}
 

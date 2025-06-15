@@ -1,16 +1,15 @@
 .dialog-title {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 600;
-  color: #333;
   margin-bottom: 0.5rem;
-  text-align: center;
+  padding: 0;
 }
 
 .form-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 18px;
-  padding: 10px 0;
+  gap: 16px;
+  padding-top: 8px;
 }
 
 .form-field {
@@ -21,34 +20,41 @@
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-
-  .form-field {
-    flex: 1 1 45%;
-  }
 }
 
 .dialog-actions {
-  margin-top: 20px;
   display: flex;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 12px;
+  padding: 16px 0 8px;
 }
 
-@media (max-width: 600px) {
-  .dialog-title {
-    font-size: 1.3rem;
-  }
+/* Button consistency */
+button[mat-flat-button],
+button[mat-stroked-button] {
+  min-width: 100px;
+  text-transform: none;
+  font-weight: 500;
+}
 
+/* Mobile responsiveness */
+@media (max-width: 600px) {
   .date-group {
     flex-direction: column;
-
-    .form-field {
-      flex: 1 1 100%;
-    }
+    gap: 12px;
   }
 
   .dialog-actions {
     flex-direction: column;
     align-items: stretch;
   }
+
+  .dialog-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+::ng-deep .mat-dialog-container {
+  padding: 24px !important;
+  border-radius: 12px;
 }
