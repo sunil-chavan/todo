@@ -1,0 +1,26 @@
+<div class="auth-wrapper">
+  <!-- Left Section with Background or Image -->
+  <div class="auth-left">
+    <h1>Welcome Back!</h1>
+    <p>To keep connected with us, please login with your credentials.</p>
+  </div>
+
+  <!-- Right Section with Toggle -->
+  <div class="auth-right">
+    <div class="toggle-buttons">
+      <button [class.active]="isLogin" (click)="toggleForm(true)">Login</button>
+      <button [class.active]="!isLogin" (click)="toggleForm(false)">
+        Register
+      </button>
+    </div>
+
+    <div class="auth-card" [@slide]>
+      <ng-container *ngIf="isLogin">
+        <app-login></app-login>
+      </ng-container>
+      <ng-container *ngIf="!isLogin">
+        <app-register></app-register>
+      </ng-container>
+    </div>
+  </div>
+</div>

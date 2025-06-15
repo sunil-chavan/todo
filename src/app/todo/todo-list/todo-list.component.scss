@@ -1,0 +1,76 @@
+mat-card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: #fff;
+  margin: 1rem 3rem;
+  max-width: 100%;
+}
+
+mat-form-field {
+  margin: 1rem 0;
+}
+
+.table-responsive {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+
+table {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fdfdfd;
+}
+
+th.mat-header-cell {
+  background: #f8f9fa;
+  font-weight: bold;
+  color: #343a40;
+}
+
+td.mat-cell,
+th.mat-header-cell {
+  padding: 0.75rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+mat-paginator {
+  margin-top: 1rem;
+}
+
+button[mat-icon-button] {
+  margin-right: 0.25rem;
+}
+@media (max-width: 768px) {
+  th.mat-header-cell,
+  td.mat-cell {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  mat-card {
+    padding: 1rem;
+  }
+}
+.datatable-search {
+  margin: 0;
+  text-align: right;
+  mat-label {
+    font-size: 0.85rem;
+  }
+
+  input {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    height: 0px;
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0;
+  }
+
+  .mat-form-field-flex {
+    border-radius: 4px;
+  }
+  }
